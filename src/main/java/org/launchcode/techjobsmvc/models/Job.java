@@ -1,5 +1,6 @@
 package org.launchcode.techjobsmvc.models;
 
+import java.util.HashMap;
 import java.util.Objects;
 
 public class Job {

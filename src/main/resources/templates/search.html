@@ -37,8 +37,14 @@
   <hr />
 
   <!-- TODO #4 - Loop over the search results to display all job fields. -->
+    <div th:unless="${searchType == 'all' || searchTerm == 'All'}">
+        <div th:if="${jobs}">
+            <h3>Search Results:</h3>
+        </div>
+    </div>
+    <div th:replace="~{fragments :: job-table}"></div>
+
 
 </div>
-
 </body>
 </html>
